@@ -19,7 +19,9 @@ public class Programa {
 		
 		System.out.print("AREA = " + String.format("%.2f", ret.area()));
 		System.out.println();
-		System.out.print("PARAMETRO " + String.format("%.2f", ret.perimetro()));
+		System.out.print("PARAMETRO = " + String.format("%.2f", ret.perimetro()));
+		System.out.println();
+		System.out.println("DIAGONAL = " + String.format("%.2f", ret.diagonal()));
 		
 		sc.close();
 	}

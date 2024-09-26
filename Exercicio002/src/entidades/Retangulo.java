@@ -13,5 +13,8 @@ public class Retangulo {
 		return (largura + altura) * 2;
 	}
 	
+	public double diagonal() {
+		return Math.sqrt(altura * altura + largura * largura); 
+	}
 	
 }
