@@ -27,7 +27,7 @@ public class Programa {
 		}else {
 			System.out.println("Aprovado");
 		}
-		
+	
 		
 		sc.close();
 	}
