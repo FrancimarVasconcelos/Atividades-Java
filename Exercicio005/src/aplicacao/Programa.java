@@ -24,16 +24,16 @@ public class Programa {
 		
 		System.out.print("Existe um depósito inicial (s/n)? ");
 		char simNao = sc.next().charAt(0);
-		if (simNao == 'S') {
+		if (simNao == 's') {
 			System.out.print("Insira o valor do depósito inicial: ");
 			double desposito = sc.nextDouble();
 			System.out.println();
-			System.out.println("Conta atual: ");
 			banco.Deposito(desposito);
+			System.out.println("Dados da conta: ");
 			System.out.println(banco);
 		}else {
 			System.out.println();
-			System.out.println("Conta atual: ");
+			System.out.println("Dados da conta: ");
 			System.out.println(banco);
 			System.out.println();
 		}
@@ -41,7 +41,18 @@ public class Programa {
 			System.out.print("Insira um valor de depósito: ");
 			double desposito = sc.nextDouble();
 			banco.Deposito(desposito);
+			System.out.println("Dados atualizados da conta ");
 			System.out.println(banco);
+			System.out.println();
+			
+			System.out.print("Insira um valor de retirada: ");
+			double sacar = sc.nextDouble();
+			banco.Saque(sacar);
+			System.out.println("Dados atualizados da conta ");
+			System.out.println(banco);
+			System.out.println();
+			
+			
 			sc.close();
 		}
 	}

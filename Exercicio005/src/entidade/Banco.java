@@ -20,6 +20,10 @@ public class Banco {
 	public void Deposito(double deposito) {
 		saldo += deposito;
 	}
+	
+	public void Saque (double sacar) {
+		saldo -= sacar +5.0;
+	}
 
 	public int getConta() {
 		return conta;
@@ -46,7 +50,7 @@ public class Banco {
 	}
 
 	public String toString() {
-		return "Conta "+ conta + ", " + "Titular: " + nome + ", " + "Saldo " + saldo;
+		return "Conta "+ conta + ", " + "Titular: " + nome + ", " + "Saldo " + String.format("%.2f",saldo);
 	}
 
 	
